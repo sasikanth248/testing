@@ -41,6 +41,12 @@ public class CanvasBackSlide extends Canvas {
 			}
 			g.setColor(Color.BLACK);
 		}
+		else if(("horizontal stripes").equalsIgnoreCase(type)){
+			for(int j=0;j<401;j+=10){
+				g.drawRect(0, j, 400, 5);
+			}
+			g.setColor(Color.BLACK);
+		}
 		else{
 			for(int i=0;i<401;i+=30){
 				g.drawRect(i, i+15, 400, 400);
@@ -57,7 +63,7 @@ public class CanvasBackSlide extends Canvas {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		CanvasBackSlide cm=new CanvasBackSlide("vertical stripes");
+		CanvasBackSlide cm=new CanvasBackSlide("horizontal stripes");
 		JFrame jp=new JFrame();
 		jp.add(cm);
 		jp.setSize(400,400);

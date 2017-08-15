@@ -41,6 +41,7 @@ public class CanvasBackSlide extends Canvas {
 			}
 			g.setColor(Color.BLACK);
 		}
+		
 		else if(("horizontal stripes").equalsIgnoreCase(type)){
 			for(int j=0;j<401;j+=10){
 				g.drawRect(0, j, 400, 5);
